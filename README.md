@@ -1,1 +1,1 @@
-## Programming Challengs
+## Programming Challenges

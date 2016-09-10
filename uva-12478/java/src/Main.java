@@ -57,7 +57,7 @@ public class Main {
             for (String chars : gridList) {
                 for (int i = 0; i <= chars.length() - n.length(); i++) {
                     if (n.equals(sortString(chars.substring(i, i + n.length())))) {
-                        System.out.println(name + " is found in [" + chars + "]");
+//                        System.out.println(name + " is found in [" + chars + "]");
                         namesMap.put(name, namesMap.get(name) + 1);
                         if (namesMap.get(name) >= 2) {
                             System.out.println(name);

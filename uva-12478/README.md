@@ -46,3 +46,5 @@ There is no input for this problem.
 ### Output
 
 Output just one string which is the name hidden twice in the grid
+
+*Note: First sort the names, compare them to all sorted substrings with the same length from the horizontal and verticle lines in the grid.*

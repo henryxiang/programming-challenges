@@ -33,3 +33,5 @@ Your program should accept all sets of characters that use the same encoding sch
 *IBM is a trademark of the International Business Machine Corporation.
 *DEC is the trademark of the Digital Equipment Corporation.
 ```
+
+*Note: Look at the ASCII table and find the pattern.*

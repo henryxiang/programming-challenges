@@ -20,3 +20,9 @@ For each line of input print a single integer in one line denoting the displacem
 0
 120
 ```
+
+*Note: Assume the initial velocity is 0 and acceleration is constant, then displacement can be calculated based on final velocity and travelling time as the following:
+```
+    S = V * t / 2
+```
+*

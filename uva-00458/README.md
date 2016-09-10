@@ -27,7 +27,7 @@ Your program should accept all sets of characters that use the same encoding sch
 1KLJ'pz'{ol'{yhklthyr'vm'{ol'Kpnp{hs'Lx|pwtlu{'Jvywvyh{pvu5
 ```
 
-Sample Output
+### Sample Output
 ```
 *CDC is the trademark of the Control Data Corporation.
 *IBM is a trademark of the International Business Machine Corporation.

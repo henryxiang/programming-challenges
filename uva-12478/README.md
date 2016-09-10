@@ -39,7 +39,7 @@ other names are hidden exactly once. You have to print the name which is hidden 
 
 One name (WASI) is found in the 4th row.
 
-###Input
+### Input
 
 There is no input for this problem.
 

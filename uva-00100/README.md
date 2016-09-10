@@ -59,4 +59,4 @@ For each pair of input integers i and j you should output i, j, and the maximum 
 ### Gotchas
 
 1. For the two input numbers, the first one can be greater than the second or they can be the same.
-2. Java integers are signed, they may have overflow problems during calculation for a input close to 1,000,000.
+2. Java integers are signed, they may have overflow problems during calculation for an odd input number close to 1,000,000.

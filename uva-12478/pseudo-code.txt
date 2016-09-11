@@ -34,7 +34,7 @@ initGridList()
     horizontalLine = grid[row]
     gridList.add(horizontalLine)
 
-  for col in 0 to names[0].size()
+  for col in 0..names[0].size()
     String verticalLine = getGridColumn(grid, col)
     gridList.add(verticalLine)
 

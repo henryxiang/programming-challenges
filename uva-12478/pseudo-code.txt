@@ -1,0 +1,54 @@
+/** UVa 12478 **/
+
+/* Inputs */
+String[] names
+String[] grid
+
+
+/* Variables */
+Map<String, Integer> namesMap   // keep track of name matching count
+List<String> gridList           // rows and columns of grid in string format
+
+
+/* Functions */
+main()
+  initNamesMap()
+  initGridList()
+
+  for name in names
+    for line in gridList
+      List<String> slices = getSlices(line, name.size())
+      for slice in slices
+        if sortStrigChars(name) == sortStringChars(slice)
+          namesMap[name] += 1
+        if namesMap[name] >= 2
+          print name
+          return
+
+initNamesMap()
+  for name in names
+    namesMap[name] = 0
+
+initGridList()
+  for row in 0..grid.size()
+    horizontalLine = grid[row]
+    gridList.add(horizontalLine)
+
+  for col in 0 to names[0].size()
+    String verticalLine = getGridColumn(grid, col)
+    gridList.add(verticalLine)
+
+String getGridColumn(String[] grid, int colIndex)
+  String line
+  for rowIndex in 0..grid.size()
+    line += grid[rowIndex][colIndex]
+
+List<String> getSlices(String s, int sliceSize)
+  List<String> results
+  for i in 0...(s.size() - sliceSize)
+    results.add(s.substring(i, i + sliceSize))
+
+String sortStringChars(String s)
+  char[] sortedChars = s.sortByChars()
+  return String(sortedChars)
+

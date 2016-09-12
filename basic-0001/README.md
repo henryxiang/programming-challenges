@@ -15,7 +15,7 @@ The chess board will be represented with a 8x8 2-D array of characters, which co
 You will be given the position of a piece under consideration and asked for printing chess board in ASCII format that displays the status of every spot on the board.
 
 ### Sample Input
-``
+```
 K 2 3
 R 1 4
 Q 3 2
@@ -23,33 +23,31 @@ Q 3 2
 
 ### Sample Output
 ```
-_ _ * _ * _ _ _ 
-_ * _ _ _ * _ _ 
-_ _ _ K _ _ _ _ 
-_ * _ _ _ * _ _ 
-_ _ * _ * _ _ _ 
-_ _ _ _ _ _ _ _ 
-_ _ _ _ _ _ _ _ 
-_ _ _ _ _ _ _ _ 
+_ _ * _ * _ _ _
+_ * _ _ _ * _ _
+_ _ _ K _ _ _ _
+_ * _ _ _ * _ _
+_ _ * _ * _ _ _
+_ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _
+_ _ _ _ _ _ _ _
 
+_ _ _ _ * _ _ _
+* * * * R * * *
+_ _ _ _ * _ _ _
+_ _ _ _ * _ _ _
+_ _ _ _ * _ _ _
+_ _ _ _ * _ _ _
+_ _ _ _ * _ _ _
+_ _ _ _ * _ _ _
 
-_ _ _ _ * _ _ _ 
-* * * * R * * * 
-_ _ _ _ * _ _ _ 
-_ _ _ _ * _ _ _ 
-_ _ _ _ * _ _ _ 
-_ _ _ _ * _ _ _ 
-_ _ _ _ * _ _ _ 
-_ _ _ _ * _ _ _ 
-
-
-_ _ * _ _ * _ _ 
-* _ * _ * _ _ _ 
-_ * * * _ _ _ _ 
-* * Q * * * * * 
-_ * * * _ _ _ _ 
-* _ * _ * _ _ _ 
-_ _ * _ _ * _ _ 
-_ _ * _ _ _ * _ 
+_ _ * _ _ * _ _
+* _ * _ * _ _ _
+_ * * * _ _ _ _
+* * Q * * * * *
+_ * * * _ _ _ _
+* _ * _ * _ _ _
+_ _ * _ _ * _ _
+_ _ * _ _ _ * _
 
 ```

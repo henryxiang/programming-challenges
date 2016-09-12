@@ -16,9 +16,9 @@ You will be given the position of a piece under consideration and asked for prin
 
 ### Sample Input
 ```
-K 2 3
-R 1 4
-Q 3 2
+K  2  3
+R  1  4
+Q  3  2
 ```
 
 ### Sample Output

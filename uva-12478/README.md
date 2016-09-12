@@ -1,4 +1,4 @@
-## [12478 - Hardest Problem Ever (Easy)](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=279&page=show_problem&problem=3922)
+## [Hardest Problem Ever (Easy)](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=279&page=show_problem&problem=3922)
 
 You are given a 9 × 9 grid containing letters:
 ```

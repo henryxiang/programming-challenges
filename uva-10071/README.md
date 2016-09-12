@@ -1,4 +1,4 @@
-## [10071 - Back to High School Physics](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1012)
+## [Back to High School Physics](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1012)
 
 A particle has initial velocity and acceleration. If its velocity after certain time is v then what will its displacement be in twice of that time?
 

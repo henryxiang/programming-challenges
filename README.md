@@ -2,15 +2,15 @@
 
 ### Shame to Solve
 
-* [UVa 00100 - The 3n + 1 problem](programming-challenges/uva-00100/)
-* [UVa 00458 - The Decoder](programming-challenges/uva-00458/)
-* [UVa 10055 - Hashmat the Brave Warrior](programming-challenges/uva-10055/)
-* [UVa 10071 - Back to High School Physics](programming-challenges/uva-10071/)
+* [UVa 00100 - The 3n + 1 problem](programming-challenges/tree/master/uva-00100/)
+* [UVa 00458 - The Decoder](programming-challenges/tree/master/uva-00458/)
+* [UVa 10055 - Hashmat the Brave Warrior](programming-challenges/tree/master/uva-10055/)
+* [UVa 10071 - Back to High School Physics](programming-challenges/tree/master/uva-10071/)
 
 
 ### Interesting
 
-* [UVa 12478 - Hardest Problem Ever (Easy)](programming-challenges/uva-12478/)
+* [UVa 12478 - Hardest Problem Ever (Easy)](programming-challenges/tree/master/uva-12478/)
 
 
 ### Inspiring
@@ -23,4 +23,4 @@
 
 ### TODOs
 
-* [UVa 00101](programming-challenges/uva-00101/)
+* [UVa 00101](programming-challenges/tree/master/uva-00101/)

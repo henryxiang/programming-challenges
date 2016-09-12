@@ -13,7 +13,6 @@ public class Main {
             char[][] board = new char[8][8];
             clearBoard(board);
             putPieceOnBoard(board, piece, row, col);
-            findAllAttackedSpots(board, piece, row, col);
             printBoard(board);
         }
     }
@@ -113,5 +112,6 @@ public class Main {
 
     private static void putPieceOnBoard(char[][] board, char piece, int row, int col) {
         board[row][col] = piece;
+        findAllAttackedSpots(board, piece, row, col);
     }
 }

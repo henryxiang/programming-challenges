@@ -90,3 +90,5 @@ quit
  8:
  9:
 ```
+
+*Note: Solving this problem is a good exercise for effectively using stack or double-ended queue data structure.*

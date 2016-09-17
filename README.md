@@ -10,7 +10,7 @@
 
 ### Interesting
 
-* [UVa 00101 - The Block Problem](programming-challenges/tree/master/uva-00101/)
+* [UVa 00101 - The Blocks Problem](programming-challenges/tree/master/uva-00101/)
 * [UVa 12478 - Hardest Problem Ever (Easy)](programming-challenges/tree/master/uva-12478/)
 
 

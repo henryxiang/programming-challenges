@@ -1,3 +1,3 @@
 #!/bin/bash
 
-time java -jar "$1"
+time java -jar $*

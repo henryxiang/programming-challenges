@@ -1,10 +1,16 @@
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Main {
 
     private static Map<Integer, Stack<Integer>> slots = new TreeMap<>();
     private static Map<Integer, Integer> position = new HashMap<>();
     private static Scanner scanner = new Scanner(System.in);
+    private static Logger logger = Logger.getLogger(Main.class.getName());
+    static {
+        logger.setLevel(Level.OFF);
+    }
 
     public static void main(String[] args) {
         while (scanner.hasNextLine()) {
@@ -14,6 +20,7 @@ public class Main {
             } else if (line.matches("^\\d+$")) {
                 init(Integer.parseInt(line));
             } else if (!line.isEmpty()) {
+                logger.info(line);
                 int[] pos = new int[2];
                 switch (parseCommand(line, pos)) {
                     case 1:
@@ -78,19 +85,19 @@ public class Main {
         Stack<Integer> sourceStack = slots.get(position.get(from));
         Stack<Integer> targetStack = slots.get(position.get(to));
         Integer b;
-        while (sourceStack.peek() != from && !sourceStack.empty()) {
+        while (sourceStack.peek() != from) {
             b = sourceStack.pop();
             slots.get(b).push(b);
             position.put(b, b);
         }
-        while (targetStack.peek() != to && !targetStack.empty()) {
+        while (targetStack.peek() != to) {
             b = targetStack.pop();
             slots.get(b).push(b);
             position.put(b, b);
         }
         b = sourceStack.pop();
         targetStack.push(b);
-        position.put(b, to);
+        position.put(b, position.get(to));
     }
 
     private static void moveOver(int from, int to) {
@@ -99,14 +106,14 @@ public class Main {
         Stack<Integer> sourceStack = slots.get(position.get(from));
         Stack<Integer> targetStack = slots.get(position.get(to));
         Integer b;
-        while (sourceStack.peek() != from && !sourceStack.empty()) {
+        while (sourceStack.peek() != from) {
             b = sourceStack.pop();
             slots.get(b).push(b);
             position.put(b, b);
         }
         b = sourceStack.pop();
         targetStack.push(b);
-        position.put(b, to);
+        position.put(b, position.get(to));
     }
 
     private static void pileOnto(int from, int to) {
@@ -116,14 +123,14 @@ public class Main {
         Stack<Integer> targetStack = slots.get(position.get(to));
         Stack<Integer> temp = new Stack<>();
         Integer b;
-        while (sourceStack.peek() != from && !sourceStack.empty()) {
+        while (sourceStack.peek() != from) {
             b = sourceStack.pop();
             temp.push(b);
         }
         b = sourceStack.pop();
         temp.push(b);
 
-        while (targetStack.peek() != to && !targetStack.empty()) {
+        while (targetStack.peek() != to) {
             b = targetStack.pop();
             slots.get(b).push(b);
             position.put(b, b);
@@ -132,7 +139,7 @@ public class Main {
         while (!temp.empty()) {
             b = temp.pop();
             targetStack.push(b);
-            position.put(b, to);
+            position.put(b, position.get(to));
         }
     }
 
@@ -144,7 +151,7 @@ public class Main {
         Stack<Integer> temp = new Stack<>();
         Integer b;
 
-        while (sourceStack.peek() != from && !sourceStack.empty()) {
+        while (sourceStack.peek() != from) {
             b = sourceStack.pop();
             temp.push(b);
         }
@@ -154,7 +161,7 @@ public class Main {
         while (!temp.empty()) {
             b = temp.pop();
             targetStack.push(b);
-            position.put(b, to);
+            position.put(b, position.get(to));
         }
     }
 
